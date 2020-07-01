@@ -1,0 +1,30 @@
+/* hello.css */
+body {
+  background-color: #FFFFE0;
+}
+
+em {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+}
+
+p {
+  font-size: 24px;
+}
+
+strong {
+  color: blue;
+  text-decoration: underline;
+}
+
+.more-text {
+  color: gray;
+}
+
+#final-paragraph {
+  text-decoration: underline;
+}
