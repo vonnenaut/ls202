@@ -1,0 +1,33 @@
+/* spacing_and_dimensions.css */
+body {
+
+}
+
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+#red {
+  background-color: #fcc;
+  padding: 20px;
+}
+
+#blue {
+  background-color: #ccf;
+  border: 5px solid black;
+}
+
+/* the blue div is larger than the red because we're using the default box-sizing: content-box; which sets the defined width to the content only, so when we add a border, it is added outside the specified size of 300px
+
