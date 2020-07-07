@@ -363,14 +363,16 @@ border-box makes responsive layouts easier to make because sizing specifies the 
 - flex (see below)
 - grid (see below)
 
-NOTE: newlines introduce space between elements which can cause layout problems.  Here is a workaround using comments in the case of a list:
+NOTE: newlines introduce space between elements which can cause layout problems.  Here are two alternate workarounds using comments or setting font size to zero, in the case of wanting a list to show multiple items on the same line (such as wanting to have multiple menu links, photos, etc., side-by-side, for example:
 ```html
+<main>  
   <ul>
     <li>Item 1</li><!--
   --><li>Item 2</li><!--
   --><li>Item 3</li><!--
   --><li>Item 4</li>
   </ul>
+</main>
 ```
 
 ```css
@@ -394,6 +396,16 @@ li {
   text-align: center;
   display: inline-block;
   width: 25%;
+}
+
+/* alternate -- set default font size to zero in parent container and then redefine it in child containers:
+
+main {
+  font-size: 0;
+}
+
+li {
+  font-size 1rem;
 }
 ```
 
@@ -937,5 +949,7 @@ https://learn.shayhowe.com/html-css/getting-to-know-css/
 https://www.codecademy.com/catalog/language/html-css
 
 https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/
+
+https://launchschool.com
 
 &nbsp;
