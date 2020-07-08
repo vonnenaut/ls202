@@ -3,6 +3,11 @@ body, main, figure, figcaption, img {
   padding: 0;
 }
 
+body {
+  background-image: url("https://d3jtzah944tvom.cloudfront.net/202/images/lesson_3/gradient-background.png");
+  background-size: cover;
+}
+
 figure {
   display: inline-block;
   box-sizing: border-box;
