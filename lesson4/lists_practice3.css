@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 25px;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 45px;
+  padding: ;
+}
+
+ol {
+  padding: 1.5rem 0 1rem 4rem;
+  list-style: reverse;
+}
+
+li {
+  list-style-type: upper-roman;
+}

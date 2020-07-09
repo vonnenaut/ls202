@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  width: 75%;
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+}
+
+h1 {
+  margin: 0.3rem 0 1rem 0;
+}
+
+h2 {
+  margin: 0.4rem 0 0.6rem 0;
+}
+
+p {
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+  width: 105%;
+}
+
+ul {
+  padding: 0.8rem 2rem 1.5rem 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+#byline {
+  font-size: 1.1rem;
+}
