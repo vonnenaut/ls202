@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: "Helvetica", Arial;
+  font-size: 24px;
+  margin: 30px 0 0 30px;
+}
+
+h1 {
+  font-family: "Franklin Gothic Heavy", Arial;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Helvetica Black", Arial;
+  font-size: 2.2rem;
+}
+
+hr.heavy-hr {
+  size: 5px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+/*th {
+	border-bottom: 3px solid white;
+}*/
+
+th, td {
+  border-bottom: 3px solid white;
+  padding: 10px;
+}
