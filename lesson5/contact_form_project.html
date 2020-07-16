@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+      	color: white;
+      	background-color: black;
+      }
+
+      fieldset * {
+      	display: block;
+      }
+
+      input[type="number"] {
+      	width: 5em;
+      }
+
+      input[type="checkbox"] {
+      	display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" required>
+
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required>
+
+        <label for="city">City</label>
+        <input type="text" name="city" required>
+
+        <label for="state">State</label>
+        <select name="state" id="state" required>
+          <option>AK</option>
+          <option>AL</option>
+          <option>AR</option>
+          <option>AZ</option>
+          <option>CA</option>
+          <option>CO</option>
+          <option>CT</option>
+          <option>DC</option>
+          <option>DE</option>
+          <option>FL</option>
+          <option>GA</option>
+          <option>HI</option>
+          <option>IA</option>
+          <option>ID</option>
+          <option>IL</option>
+          <option>IN</option>
+          <option>KS</option>
+          <option>KY</option>
+          <option>LA</option>
+          <option>MA</option>
+          <option>MD</option>
+          <option>ME</option>
+          <option>MI</option>
+          <option>MN</option>
+          <option>MO</option>
+          <option>MS</option>
+          <option>MT</option>
+          <option>NC</option>
+          <option>ND</option>
+          <option>NE</option>
+          <option>NH</option>
+          <option>NJ</option>
+          <option>NM</option>
+          <option>NV</option>
+          <option>NY</option>
+          <option>OH</option>
+          <option>OK</option>
+          <option>OR</option>
+          <option>PA</option>
+          <option>RI</option>
+          <option>SC</option>
+          <option>SD</option>
+          <option>TN</option>
+          <option>TX</option>
+          <option>UT</option>
+          <option>VA</option>
+          <option>VT</option>
+          <option>WA</option>
+          <option>WI</option>
+          <option>WV</option>
+          <option>WY</option>
+        </select>
+
+        <label for="zip">Zip Code</label>
+        <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required>
+
+        <label for="favorite_color">Which of these colors do you like best?</label>
+        <select name="favorite_color" id="favorite_color">
+          <option value="red" selected>Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="indigo">Indigo</option>
+          <option value="violet">Violet</option>
+        </select>
+
+        <label for="technologies">Which web technologies do you want to learn?</label>
+        <input type="checkbox" name="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" name="ruby">
+        <label for="ruby">Ruby</label>
+
+        <input type="checkbox" name="rails">
+        <label for="rails">Rails</label>
+
+        <input type="checkbox" name="python">
+        <label for="python">Python</label>
+ 
+        <label for="comments">Comments</label>
+        <textarea name="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
+      </fieldset>
+      
+      <button type="submit" value="send">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
