@@ -4,13 +4,42 @@
     <title>Contact Form</title>
     <meta charset="utf-8" />
     <style>
+      * {
+      	padding: 0;
+      	margin: 0;
+      }
+
       body {
+      	display: block;
+      	margin: 0 auto;
       	color: white;
       	background-color: black;
+      	max-width: 800px;
+      }
+
+      form {
+      	display: block;
+      	width: 800px;
+      	border: none;
+      	padding: 10px;
+      	margin: 0 auto;
+      }
+
+      dl, ul, p {
+      	padding: 10px 0;
+      }
+
+      fieldset {
+      	border: none;
       }
 
       fieldset * {
       	display: block;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+      	width: 500px;
       }
 
       input[type="number"] {
@@ -20,118 +49,162 @@
       input[type="checkbox"] {
       	display: inline-block;
       }
+
+      dd {
+      	margin-bottom: 20px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+      	display: inline-block;
+      	color: white;
+      	background-color: black;
+        padding: 5px;
+      }
+
+      label {
+      	padding: 0;
+      }
     </style>
   </head>
 
   <body>
     <form action="#" method="post">
       <fieldset>
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" required>
+      	<dl>
+      	  <dt><label for="first_name">First Name</label></dt>
+          <dd><input type="text" name="first_name" required></dd>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" required>
+		  <dt><label for="last_name">Last Name</label></dt>
+		  <dd><input type="text" name="last_name" required></dd>
 
-        <label for="email">Email Address</label>
-        <input type="email" name="email" required>
+		  <dt><label for="email">Email Address</label></dt>
+		  <dd><input type="email" name="email" required></dd>
 
-        <label for="city">City</label>
-        <input type="text" name="city" required>
+		  <dt><label for="city">City</label></dt>
+		  <dd><input type="text" name="city" required></dd>
 
-        <label for="state">State</label>
-        <select name="state" id="state" required>
-          <option>AK</option>
-          <option>AL</option>
-          <option>AR</option>
-          <option>AZ</option>
-          <option>CA</option>
-          <option>CO</option>
-          <option>CT</option>
-          <option>DC</option>
-          <option>DE</option>
-          <option>FL</option>
-          <option>GA</option>
-          <option>HI</option>
-          <option>IA</option>
-          <option>ID</option>
-          <option>IL</option>
-          <option>IN</option>
-          <option>KS</option>
-          <option>KY</option>
-          <option>LA</option>
-          <option>MA</option>
-          <option>MD</option>
-          <option>ME</option>
-          <option>MI</option>
-          <option>MN</option>
-          <option>MO</option>
-          <option>MS</option>
-          <option>MT</option>
-          <option>NC</option>
-          <option>ND</option>
-          <option>NE</option>
-          <option>NH</option>
-          <option>NJ</option>
-          <option>NM</option>
-          <option>NV</option>
-          <option>NY</option>
-          <option>OH</option>
-          <option>OK</option>
-          <option>OR</option>
-          <option>PA</option>
-          <option>RI</option>
-          <option>SC</option>
-          <option>SD</option>
-          <option>TN</option>
-          <option>TX</option>
-          <option>UT</option>
-          <option>VA</option>
-          <option>VT</option>
-          <option>WA</option>
-          <option>WI</option>
-          <option>WV</option>
-          <option>WY</option>
-        </select>
+		  <dt><label for="state">State</label></dt>
+		  <dd>
+		    <select name="state" id="state" required>
+	          <option>AK</option>
+	          <option>AL</option>
+	          <option>AR</option>
+	          <option>AZ</option>
+	          <option>CA</option>
+	          <option>CO</option>
+	          <option>CT</option>
+	          <option>DC</option>
+	          <option>DE</option>
+	          <option>FL</option>
+	          <option>GA</option>
+	          <option>HI</option>
+	          <option>IA</option>
+	          <option>ID</option>
+	          <option>IL</option>
+	          <option>IN</option>
+	          <option>KS</option>
+	          <option>KY</option>
+	          <option>LA</option>
+	          <option>MA</option>
+	          <option>MD</option>
+	          <option>ME</option>
+	          <option>MI</option>
+	          <option>MN</option>
+	          <option>MO</option>
+	          <option>MS</option>
+	          <option>MT</option>
+	          <option>NC</option>
+	          <option>ND</option>
+	          <option>NE</option>
+	          <option>NH</option>
+	          <option>NJ</option>
+	          <option>NM</option>
+	          <option>NV</option>
+	          <option>NY</option>
+	          <option>OH</option>
+	          <option>OK</option>
+	          <option>OR</option>
+	          <option>PA</option>
+	          <option>RI</option>
+	          <option>SC</option>
+	          <option>SD</option>
+	          <option>TN</option>
+	          <option>TX</option>
+	          <option>UT</option>
+	          <option>VA</option>
+	          <option>VT</option>
+	          <option>WA</option>
+	          <option>WI</option>
+	          <option>WV</option>
+	          <option>WY</option>
+            </select>
+          </dd>
 
-        <label for="zip">Zip Code</label>
-        <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required>
+          <dt><label for="zip">Zip Code</label></dt>
+          <!-- <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required> -->
+          <dd>
+          	<input type="number" name="zip" placeholder="#####" pattern="[0-9]{5}">
+          </dd>
+        </dl>
 
-        <label for="favorite_color">Which of these colors do you like best?</label>
-        <select name="favorite_color" id="favorite_color">
-          <option value="red" selected>Red</option>
-          <option value="orange">Orange</option>
-          <option value="yellow">Yellow</option>
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="indigo">Indigo</option>
-          <option value="violet">Violet</option>
-        </select>
+        <p>Which of these colors do you like best?</p>
 
-        <label for="technologies">Which web technologies do you want to learn?</label>
-        <input type="checkbox" name="html">
-        <label for="html">HTML</label>
+        <ul>
+          <li>
+          	<select name="favorite_color" id="favorite_color">
+	          <option value="red" name="color" selected>Red</option>
+	          <option value="orange" name="color">Orange</option>
+	          <option value="yellow" name="color">Yellow</option>
+	          <option value="green" name="color">Green</option>
+	          <option value="blue" name="color">Blue</option>
+	          <option value="indigo" name="color">Indigo</option>
+	          <option value="violet" name="color">Violet</option>
+	        </select>
+	      </li>
+	    </ul>
 
-        <input type="checkbox" name="css">
-        <label for="css">CSS</label>
+        <p>Which web technologies do you want to learn?</p>
 
-        <input type="checkbox" name="javascript">
-        <label for="javascript">JavaScript</label>
+        <ul>
+          <li>
+          	<label for="html"><input type="checkbox" name="html">
+            HTML</label>
+          </li>
 
-        <input type="checkbox" name="ruby">
-        <label for="ruby">Ruby</label>
+          <li>
+	        <label for="css"><input type="checkbox" name="css">
+	        CSS</label>
+	      </li>
 
-        <input type="checkbox" name="rails">
-        <label for="rails">Rails</label>
+          <li>
+	        <label for="javascript"><input type="checkbox" name="javascript">JavaScript</label>
+	      </li>
 
-        <input type="checkbox" name="python">
-        <label for="python">Python</label>
- 
-        <label for="comments">Comments</label>
-        <textarea name="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
+	      <li>  
+	        <label for="ruby"><input type="checkbox" name="ruby">
+	        Ruby</label>
+	      </li>
+
+	      <li>  
+	        <label for="rails"><input type="checkbox" name="rails">
+	        Rails</label>
+	      </li>
+
+          <li>
+	        <label for="python"><input type="checkbox" name="python">
+	        Python</label>
+	      </li>
+	 
+	      <li>  
+	        <label for="comments">Comments</label>
+            <textarea name="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
+            <input type="hidden" value="2020-07-16" name="timestamp">
+            <input type="submit" value="Send">
+            <input type="reset">
+          </li>
+        </ul>
       </fieldset>
-      
-      <button type="submit" value="send">Send</button>
-      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
