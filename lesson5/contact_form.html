@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="EN">
   <head>
-    <title>Contact</title>
+    <title>Contact Form</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <style type="text/css">
+      body {
+        font-size: 17px;
+      }
+
+      fieldset ~ fieldset {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      fieldset ~ fieldset dl {
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      fieldset ~ fieldset dt dd {
+        display: inline-block;
+        width: 25%;
+      }
+    </style>
   </head>
 
   <body>
-    <form action="#">
+
+    <!-- Contact Form -->
+    <form action="#" method="get">
       <fieldset>
       	<dl>
       	  <dt><label for="first_name">First Name</label></dt>
@@ -20,16 +42,20 @@
           <dd><input type="email" name="email" id="email"  autocomplete="off" autocorrect="off" autocapitalize="none" required></dd>
 
           <dt><label for="phone">Phone Number</label></dt>
-          <dd><input type="tel" name="phone" id="phone" autocomplete="off" required></dd>
+          <dd><input type="tel" name="phone" id="phone" autocomplete="off" placeholder="###-###-####" required></dd>
 
-          <dt><label for="phone_type">Phone Type</label>
-          </dt>
+          <dt><label for="phone_type">Phone Type</label></dt>
           <dd>
           	<select name="phone_type" id="phone_type">
           	  <option value="home" selected>Home</option>
           	  <option value="business">Business</option>
           	  <option value="mobile">Mobile</option>
           	</select>
+          </dd>
+
+          <dt><label for="message">Message</label></dt>
+          <dd>
+            <textarea name="message" id="message" rows="6" cols="80">Optional Message ...</textarea>
           </dd>
 
           <input type="submit" value="Send">
