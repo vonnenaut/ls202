@@ -3,69 +3,7 @@
   <head>
     <title>Contact Form</title>
     <meta charset="utf-8" />
-    <style>
-      * {
-      	padding: 0;
-      	margin: 0;
-      }
-
-      body {
-      	display: block;
-      	margin: 0 auto;
-      	color: white;
-      	background-color: black;
-      	max-width: 800px;
-      }
-
-      form {
-      	display: block;
-      	width: 800px;
-      	border: none;
-      	padding: 10px;
-      	margin: 0 auto;
-      }
-
-      dl, ul, p {
-      	padding: 10px 0;
-      }
-
-      fieldset {
-      	border: none;
-      }
-
-      fieldset * {
-      	display: block;
-      }
-
-      input[type="text"],
-      input[type="email"] {
-      	width: 500px;
-      }
-
-      input[type="number"] {
-      	width: 5em;
-      }
-
-      input[type="checkbox"] {
-      	display: inline-block;
-      }
-
-      dd {
-      	margin-bottom: 20px;
-      }
-
-      input[type="submit"],
-      input[type="reset"] {
-      	display: inline-block;
-      	color: white;
-      	background-color: black;
-        padding: 5px;
-      }
-
-      label {
-      	padding: 0;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="contact_form_project.css">
   </head>
 
   <body>
@@ -80,73 +18,71 @@
 
 		  <dt><label for="email">Email Address</label></dt>
 		  <dd><input type="email" name="email" required></dd>
+		</dl>
 
-		  <dt><label for="city">City</label></dt>
-		  <dd><input type="text" name="city" required></dd>
+		<div id="city-state-zip">
+			<label for="city">City</label></dt>
+			<input type="text" name="city" id="city" required>
 
-		  <dt><label for="state">State</label></dt>
-		  <dd>
-		    <select name="state" id="state" required>
-	          <option>AK</option>
-	          <option>AL</option>
-	          <option>AR</option>
-	          <option>AZ</option>
-	          <option>CA</option>
-	          <option>CO</option>
-	          <option>CT</option>
-	          <option>DC</option>
-	          <option>DE</option>
-	          <option>FL</option>
-	          <option>GA</option>
-	          <option>HI</option>
-	          <option>IA</option>
-	          <option>ID</option>
-	          <option>IL</option>
-	          <option>IN</option>
-	          <option>KS</option>
-	          <option>KY</option>
-	          <option>LA</option>
-	          <option>MA</option>
-	          <option>MD</option>
-	          <option>ME</option>
-	          <option>MI</option>
-	          <option>MN</option>
-	          <option>MO</option>
-	          <option>MS</option>
-	          <option>MT</option>
-	          <option>NC</option>
-	          <option>ND</option>
-	          <option>NE</option>
-	          <option>NH</option>
-	          <option>NJ</option>
-	          <option>NM</option>
-	          <option>NV</option>
-	          <option>NY</option>
-	          <option>OH</option>
-	          <option>OK</option>
-	          <option>OR</option>
-	          <option>PA</option>
-	          <option>RI</option>
-	          <option>SC</option>
-	          <option>SD</option>
-	          <option>TN</option>
-	          <option>TX</option>
-	          <option>UT</option>
-	          <option>VA</option>
-	          <option>VT</option>
-	          <option>WA</option>
-	          <option>WI</option>
-	          <option>WV</option>
-	          <option>WY</option>
-            </select>
-          </dd>
+			<label for="state">State</label>
+			  <select name="state" id="state" required>
+	            <option>AK</option>
+	            <option>AL</option>
+	            <option>AR</option>
+	            <option>AZ</option>
+	            <option>CA</option>
+	            <option>CO</option>
+	            <option>CT</option>
+	            <option>DC</option>
+	            <option>DE</option>
+	            <option>FL</option>
+	            <option>GA</option>
+	            <option>HI</option>
+	            <option>IA</option>
+	            <option>ID</option>
+	            <option>IL</option>
+	            <option>IN</option>
+	            <option>KS</option>
+	            <option>KY</option>
+	            <option>LA</option>
+	            <option>MA</option>
+	            <option>MD</option>
+	            <option>ME</option>
+	            <option>MI</option>
+	            <option>MN</option>
+	            <option>MO</option>
+	            <option>MS</option>
+	            <option>MT</option>
+	            <option>NC</option>
+	            <option>ND</option>
+	            <option>NE</option>
+	            <option>NH</option>
+	            <option>NJ</option>
+	            <option>NM</option>
+	            <option>NV</option>
+	            <option>NY</option>
+	            <option>OH</option>
+	            <option>OK</option>
+	            <option>OR</option>
+	            <option>PA</option>
+	            <option>RI</option>
+	            <option>SC</option>
+	            <option>SD</option>
+	            <option>TN</option>
+	            <option>TX</option>
+	            <option>UT</option>
+	            <option>VA</option>
+	            <option>VT</option>
+	            <option>WA</option>
+	            <option>WI</option>
+	            <option>WV</option>
+	            <option>WY</option>
+	          </select>
 
-          <dt><label for="zip">Zip Code</label></dt>
+          <label for="zip">Zip Code</label>
           <!-- <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required> -->
-          <dd>
-          	<input type="number" name="zip" placeholder="#####" pattern="[0-9]{5}">
-          </dd>
-        </dl>
+          	<input type="number" name="zip" id="zip" placeholder="#####" pattern="[0-9]{5}">
+        </div>
 
         <p>Which of these colors do you like best?</p>
 
@@ -195,15 +131,17 @@
 	        <label for="python"><input type="checkbox" name="python">
 	        Python</label>
 	      </li>
+	    </ul>
 	 
-	      <li>  
-	        <label for="comments">Comments</label>
+	    <dl>
+	      <dt><label for="comments">Comments</label></dt>
+	      <dd>
             <textarea name="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
             <input type="hidden" value="2020-07-16" name="timestamp">
             <input type="submit" value="Send">
             <input type="reset">
-          </li>
-        </ul>
+          </dd>
+        </dl>
       </fieldset>
     </form>
   </body>
