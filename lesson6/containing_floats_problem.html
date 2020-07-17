@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <title>Containing Floats Problem</title>
+    <meta charset="utf-8" />
+    <style>
+	  #columns {
+		   background-color: #e0e0e0;
+		   box-sizing: border-box;
+		   margin: 0 auto;
+		   padding: 20px;
+		   width: 780px;
+		   /*overflow: hidden;   resolves float container issue */
+		   /* edge cases that overflow: hidden; doesn't fix:
+		   *    - overflow:  hidden can cut off (clip) content that exceeds the allocated space for the text if the container has a set height or width.
+		        - overflow: auto can add unwanted scrollbars, which is a browser-specific behavior.
+
+              The clearfix approach can resolve these edge case issues.
+		   */
+	  }  
+
+	  #columns::after { /* This rule is the clearfix */
+          clear: both;
+          content: "";
+          display: block; 
+	  }
+
+	  #primary, #secondary {
+		   background-color: yellow;
+	  }  
+
+	  #primary {
+		   float: left;
+		   width: 500px;
+	  }  
+
+	  #secondary {
+		   float: right;
+		   width: 200px;
+	  }
+    </style>
+  </head>
+
+  <body>
+    <div id="columns">
+	  <div id="primary">
+	    <h1>Main Content</h1>
+	  </div>
+
+	  <div id="secondary">
+	    <h3>Sidebar Content</h3>
+	  </div>
+	</div>
+  </body>
+</html>
