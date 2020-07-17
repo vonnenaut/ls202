@@ -1,3 +1,6 @@
+/* contact_form_project.css */
+
+/* BEGIN Elements */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +12,9 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 800px;
-} 
+  color: white;
+  background-color: black;
+}
 
 form {
   display: block;
@@ -76,20 +81,36 @@ ul {
   list-style: none;
 }
 
-.city-state-zip {
+/* BEGIN Classes */
+.partial {
   display: inline-block;
 }
 
-input[name="city"] {
-  width: 33%;
+.one_half {
+  width: 50%;
 }
 
-input[name="zip"] {
-  width: 5rem;
+.two_fifths {
+  width: 40%;
 }
 
-input[name="city"],
-select[name="state"],
-input[name="zip"] {
-  margin-right: 10px;
+.one_tenth {
+  width: 10%;
 }
+
+.left {
+  padding-right: 5px;
+}
+
+.both {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.right {
+  .padding-left: 5px;
+}
+
+/* Begin IDs */
+
+/* END of file contact_form_project.css */

@@ -9,24 +9,31 @@
   <body>
     <form action="#" method="post">
       <fieldset>
-      	<dl>
+      	<dl class="partial one_half left">
       	  <dt><label for="first_name">First Name</label></dt>
           <dd><input type="text" name="first_name" id="first_name" required></dd>
+        </dl><!--
 
-		  <dt><label for="last_name">Last Name</label></dt>
-		  <dd><input type="text" name="last_name" id="last_name" required></dd>
+		 --><dl class="partial one_half right">
+          <dt><label for="last_name">Last Name</label></dt>
+		      <dd><input type="text" name="last_name" id="last_name" required></dd>
+        </dl>
 
-		  <dt><label for="email">Email Address</label></dt>
-		  <dd><input type="email" name="email" id="email" required></dd>
-		</dl>
+        <dl>
+		      <dt><label for="email">Email Address</label></dt>
+		      <dd><input type="email" name="email" id="email" required></dd>
+		    </dl>
 
-		<div id="city-state-zip">
-			<label for="city">City</label>
-			<input type="text" name="city" id="city" required>
+		    <dl class="partial one_half left">
+			    <dt><label for="city">City</label></dt>
+			    <dd><input type="text" name="city" id="city" required></dd>
+        </dl><!--
 
-			<label for="state">State</label>
-			  <select name="state" id="state" required>
-			  	<option value="">--</option>
+     --><dl class="partial one_tenth both">
+          <dt><label for="state">State</label></dt>
+			    <dd>
+            <select name="state" id="state" required>
+			  	    <option value="">--</option>
 	            <option>AK</option>
 	            <option>AL</option>
 	            <option>AR</option>
@@ -79,11 +86,13 @@
 	            <option>WV</option>
 	            <option>WY</option>
 	          </select>
+          </dd>
+        </dl><!--
 
-          <label for="zip">Zip Code</label>
-          <!-- <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required> -->
-          	<input type="text" name="zip" id="zip" placeholder="#####" pattern="[0-9]{5}">
-        </div>
+    --><dl class="partial two_fifths right">
+          <dt><label for="zip">Zip Code</label></dt>
+          	<dd><input type="text" name="zip" id="zip" placeholder="#####" pattern="[0-9]{5}"></dd>
+        </dl>
 
         <p>Which of these colors do you like best?</p>
 
