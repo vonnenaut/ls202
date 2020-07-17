@@ -5,29 +5,42 @@
     <meta charset="utf-8" />
     <style>
     	* {
+    		box-sizing: border-box;
     		padding: 0;
     		margin: 0;
     	}
     	section {
-    		width: 750px;
+    		max-width: 1000px;
     		margin: 0 auto;
-    		background-color: green;
+    		background-color: tan;
+    		/*overflow: hidden;*/
     	}
 
+/*    	section::after {
+    		clear: both;
+    		content: "";
+    		display: block;
+    	}*/
+
     	article {
-    		width: 500px;
+    		width: 70%;
     		float: left;
     		background-color: coral;
     	}
 
     	aside {
-    		width: 250px;
-    		float: right;
     		background-color: skyblue;
+    		float: none;
+    		overflow: hidden;
     	}
 
     	article, aside {
-    		box-sizing: border-box;
+    		padding: 1rem;
+    	}
+
+    	footer {
+    		background-color: seagreen;
+    		clear: both;
     		padding: 1rem;
     	}
 
@@ -49,6 +62,8 @@
 		<p>Nulla faucibus pretium commodo. Aliquam ornare auctor nisi. Suspendisse at tempor ligula, nec malesuada nibh. Vestibulum et risus non justo pretium accumsan. Pellentesque sodales porttitor orci, sed mattis risus dignissim posuere. Vestibulum malesuada faucibus diam. Vestibulum vitae justo auctor, rutrum elit ac, placerat mauris.</p>
 
 		<p>Fusce varius, mi sit amet convallis bibendum, nisl magna commodo diam, eu euismod nibh sem id odio. Morbi porttitor sagittis augue, nec commodo justo. Nulla lectus est, congue pharetra nisi ac, tristique lacinia neque. In dictum finibus arcu ultrices laoreet. Cras velit elit, mattis eget mauris id, condimentum posuere massa. Mauris mattis congue ligula eget elementum. Morbi et metus id tortor sagittis blandit sit amet quis sem. Etiam commodo lacinia ipsum eget posuere. Nulla et ornare purus, eget ultricies orci.</p>
+
+		<p>Donec in justo cursus, aliquet justo quis, pharetra metus. Nam faucibus non magna a ultricies. Nulla blandit cursus malesuada. Duis a tortor orci. Aliquam porta tempus ultrices. Phasellus facilisis, ligula a hendrerit efficitur, lectus urna pellentesque augue, eu viverra erat urna vel augue. Donec fermentum tellus nec vestibulum rhoncus. Mauris commodo tellus dignissim neque euismod, non vulputate turpis dignissim. Integer tortor eros, dignissim vitae dapibus nec, condimentum ac ex.</p>
     </article>
 
     <aside>
@@ -56,5 +71,11 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent odio ex, vulputate non sollicitudin quis, volutpat sit amet neque. Quisque sit amet dignissim nulla. Curabitur odio nisi, venenatis et fermentum quis, ullamcorper vitae odio. Nulla a semper arcu. Sed sed erat quis turpis fringilla tempor. Aliquam erat volutpat. Ut non imperdiet lorem, ut eleifend massa. Integer sit amet accumsan velit, faucibus malesuada magna.</p>
     </aside>
+
+    <footer>
+    	<p>
+    		Cras in nulla quis augue volutpat finibus. Suspendisse at varius nibh, nec varius nisl. Proin blandit hendrerit sapien quis placerat. Mauris vehicula convallis magna eget facilisis. Donec interdum odio ac varius pellentesque. Proin ut sapien porttitor, ultrices augue sit amet, malesuada erat. Morbi semper urna eu tristique laoreet. Maecenas at odio ac erat mollis finibus at non nulla. Integer ac elementum augue, in ultrices tortor.
+    	</p>
+    </footer>
   </body>
 </html>
