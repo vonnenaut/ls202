@@ -11,21 +11,22 @@
       <fieldset>
       	<dl>
       	  <dt><label for="first_name">First Name</label></dt>
-          <dd><input type="text" name="first_name" required></dd>
+          <dd><input type="text" name="first_name" id="first_name" required></dd>
 
 		  <dt><label for="last_name">Last Name</label></dt>
-		  <dd><input type="text" name="last_name" required></dd>
+		  <dd><input type="text" name="last_name" id="last_name" required></dd>
 
 		  <dt><label for="email">Email Address</label></dt>
-		  <dd><input type="email" name="email" required></dd>
+		  <dd><input type="email" name="email" id="email" required></dd>
 		</dl>
 
 		<div id="city-state-zip">
-			<label for="city">City</label></dt>
+			<label for="city">City</label>
 			<input type="text" name="city" id="city" required>
 
 			<label for="state">State</label>
 			  <select name="state" id="state" required>
+			  	<option value="">--</option>
 	            <option>AK</option>
 	            <option>AL</option>
 	            <option>AR</option>
@@ -81,7 +82,7 @@
 
           <label for="zip">Zip Code</label>
           <!-- <input type="number" name="zip" placeholder="#####" minlength="5" maxlength="5" required> -->
-          	<input type="number" name="zip" id="zip" placeholder="#####" pattern="[0-9]{5}">
+          	<input type="text" name="zip" id="zip" placeholder="#####" pattern="[0-9]{5}">
         </div>
 
         <p>Which of these colors do you like best?</p>
@@ -89,13 +90,13 @@
         <ul>
           <li>
           	<select name="favorite_color" id="favorite_color">
-	          <option value="red" name="color" selected>Red</option>
-	          <option value="orange" name="color">Orange</option>
-	          <option value="yellow" name="color">Yellow</option>
-	          <option value="green" name="color">Green</option>
-	          <option value="blue" name="color">Blue</option>
-	          <option value="indigo" name="color">Indigo</option>
-	          <option value="violet" name="color">Violet</option>
+	          <option value="red" selected>Red</option>
+	          <option value="orange">Orange</option>
+	          <option value="yellow">Yellow</option>
+	          <option value="green">Green</option>
+	          <option value="blue">Blue</option>
+	          <option value="indigo">Indigo</option>
+	          <option value="violet">Violet</option>
 	        </select>
 	      </li>
 	    </ul>
@@ -104,31 +105,31 @@
 
         <ul>
           <li>
-          	<label for="html"><input type="checkbox" name="html">
+          	<label for="html"><input type="checkbox" name="html" id="html">
             HTML</label>
           </li>
 
           <li>
-	        <label for="css"><input type="checkbox" name="css">
+	        <label for="css"><input type="checkbox" name="css" id="css">
 	        CSS</label>
 	      </li>
 
           <li>
-	        <label for="javascript"><input type="checkbox" name="javascript">JavaScript</label>
+	        <label for="javascript"><input type="checkbox" name="javascript" id="javascript">JavaScript</label>
 	      </li>
 
 	      <li>  
-	        <label for="ruby"><input type="checkbox" name="ruby">
+	        <label for="ruby"><input type="checkbox" name="ruby" id="ruby">
 	        Ruby</label>
 	      </li>
 
 	      <li>  
-	        <label for="rails"><input type="checkbox" name="rails">
+	        <label for="rails"><input type="checkbox" name="rails" id="rails">
 	        Rails</label>
 	      </li>
 
           <li>
-	        <label for="python"><input type="checkbox" name="python">
+	        <label for="python"><input type="checkbox" name="python" id="python">
 	        Python</label>
 	      </li>
 	    </ul>
@@ -136,7 +137,7 @@
 	    <dl>
 	      <dt><label for="comments">Comments</label></dt>
 	      <dd>
-            <textarea name="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
+            <textarea name="comments" id="comments" rows="6" cols="80" wrap="off" placeholder="Enter your comments here ..."></textarea>
             <input type="hidden" value="2020-07-16" name="timestamp">
             <input type="submit" value="Send">
             <input type="reset">
