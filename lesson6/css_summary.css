@@ -1,6 +1,195 @@
 * {
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
 }
 
+.cf::before,
+.cf::after {
+  content: "";
+  display: block;
+}
+
+.cf::after {
+  clear: both;
+}
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  border: 2px solid #999;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1000px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+li a {
+  margin: 10px;
+}
+
+div {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  background-color: inherit;
+  color: #ce4a4a;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+.dashed-border {
+  border: 3px dashed grey;
+}
+
+
+
+
+
+
+
+ul {
+  font-size: 0;
+  width: 85%;
+  list-style: none;
+  padding: 25px;
+  margin: 45px;
+}
+
+li {
+  font-size: 1.3rem;
+  padding: 3px;
+}
+
+ul.inline > li {
+  display: inline;
+}
+
+ul.margins > li {
+  margin: 30px;
+}
+
+ul.floating {
+  padding: 30px;
+}
+
+ul.floating > li {
+  float: left;
+  padding: 30px;
+  margin: 30px;
+}
+
+ul.green-background > li {
+  background-color: green;
+}
+
+ul.blue-background > li {
+  background-color: dodgerblue;
+}
+
+ul.floating > li {
+  border: 3px solid grey;
+}
+
+.solid-grey-border {
+  border: 3px solid grey;
+}
+
+.blue-background {
+  background-color: dodgerblue;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.dark-red-transparent-background {
+  background-color: rgba(139, 0, 0, .5);
+}
+
+.fixed,
+.relative,
+.absolute {
+  color: white;
+  border-radius: 12px;
+}
+
+.fixed {
+  width: 225px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 35px;
+  bottom: 50px;
+  padding: 25px 35px;
+}
+
+.fixed p {
+
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.relative {
+  background-color: orangered;
+}
+
+.absolute {
+
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.margin-20 {
+  margin: 20px;
+}
+
+/*.margin-top-bottom-10 {
+  margin: 10px;
+}*/
+
+.width-90-no-height {
+  width: 90px;
+}
+
+.width-180-height-120 {
+  width: 180px;
+  height: 120px;
+}
