@@ -1,0 +1,93 @@
+/* Elements */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 1px solid white;
+}
+
+body {
+  font: normal 24px Helvetica, Arial, sans-serif;
+	color: white;
+	background-color: black;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	padding: 25px 20px 20px;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	margin: 1.33rem 0;
+}
+
+figcaption {
+	font-size: 1rem;
+	padding-bottom: 20px;
+}
+
+figure img {
+	background-color: grey;
+	border: 15px solid white;
+	height: auto;
+}
+
+/* IDs */
+#smaller-photos img {
+	margin-bottom: 15px;
+}
+
+#photo1 {
+	width: 100%;
+}
+
+#smaller-photos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#smaller-photos img {
+	width: 21%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1280px) {
+	main {
+		flex-direction: row;
+		max-width: 100%;
+		justify-content: center;
+		align-content: center;
+	}
+
+	figure {
+		margin-right: 50px;
+		width: 950px;
+	}
+
+	#smaller-photos {
+    flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 999px) {
+  #smaller-photos {
+  	width: 25%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+	#smaller-photos {
+      width: 33.3333%;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	#smaller-photos {
+      width: 50%;
+	}
+}
