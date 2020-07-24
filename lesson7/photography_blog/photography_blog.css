@@ -1,0 +1,85 @@
+@import url("reset.css");
+
+body {
+	font: normal 18px sans-serif;
+	color: #3e606f;
+	background-image: linear-gradient(to bottom, #d1dbbd,
+	 #fcfff5);
+	background-repeat: no-repeat;
+}
+
+header {
+	width: 920px;
+	padding: 20px 20px 0 20px;
+	margin: 0 auto;
+}
+
+h1 {
+	float: left;
+	color: #193441;
+	font-size: 36px;
+	font-weight: normal;
+	background: transparent url("icon.png") 0 0 no-repeat;
+	padding: 45px 0 15px 115px;
+}
+
+nav {
+	float: right;
+	padding: 75px 0 0 0;
+}
+
+li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	color: #91aa9d;
+	background-color: #fcfff5;
+	text-decoration: none;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px 40px 14px 40px;
+}
+
+nav a.active {
+	color: #fcfff5;
+	background-color: #91aa9d;
+}
+
+main {
+	clear: both;
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 960px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 5px #b5b5b5;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+img.masthead {
+	margin: 0 0  40px 0;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: normal;
+	padding: 0 0 25px 0;
+}
+
+p {
+	padding: 0 0 20px 0;
+}
+
+figure {
+	float: right;
+	padding: 0 0 0 30px;
+}
+
+footer {
+	font-size: 14px;
+	padding: 15px 0;
+	width: 960px;
+	margin: 0 auto;
+}
