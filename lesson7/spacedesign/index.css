@@ -5,11 +5,10 @@
 }
 
 body {
-	font-family: sans-serif;
-	font-size: 19px;
+	color: #45494d;
+	font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
 	text-align: center;
-    background-color: white;
-    background-image: url("images/bg_body.gif");
+    background: #2f2840 url("images/bg_body.gif");
     background-repeat: repeat;
 }
 
@@ -21,10 +20,10 @@ header {
 	text-align: center;
 }
 
-h1 {
+header h1 {
 	display: inline-block;
-	background: transparent url("images/logo.png") 0 0 no-repeat;
-	padding: 165px;
+	padding-top: 135px;
+	padding-bottom: 115px;
 	margin-top: 160px;
 }
 
@@ -83,4 +82,23 @@ header,
 main,
 p {
 	display: inline-block;
+}
+
+nav {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+nav li {
+	padding: 0 42px;
+}
+
+nav a {
+	color: #cacaca;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: #6db9ff;
+    font-weight: bold;
 }

@@ -8,8 +8,7 @@ body {
 	font-family: sans-serif;
 	font-size: 19px;
 	text-align: center;
-    background-color: white;
-    background-image: url("bg_body.gif");
+    background: #2f2840 url("images/bg_body.gif");
     background-repeat: repeat;
 }
 
@@ -23,7 +22,6 @@ header {
 
 h1 {
 	display: inline-block;
-	background: transparent url("logo.png") 0 0 no-repeat;
 	padding: 165px;
 	margin-top: 160px;
 }
