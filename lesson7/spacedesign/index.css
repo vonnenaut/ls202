@@ -55,7 +55,7 @@ footer {
 	text-align: center;
 	background-color: #e7e7e7;
 	margin: 0 auto;
-	margin-bottom: 140px;
+  padding: 75px 0;
 }
 
 ul {
@@ -83,4 +83,47 @@ header,
 main,
 p {
 	display: inline-block;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background:
+    transparent
+    url("https://d3jtzah944tvom.cloudfront.net/202/projects/lesson_7/spacedesign/images/icons_social-media.png")
+    0 0 no-repeat;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -8685px;
+  width: 46px;
+}
+
+footer li a.twitter {
+  background-position: 0 0;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}
+
+footer p {
+  color: #bcbcbc;
+  width: 100px;
 }
